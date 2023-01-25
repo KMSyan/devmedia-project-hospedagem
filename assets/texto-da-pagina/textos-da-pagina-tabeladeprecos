@@ -110,7 +110,8 @@ TEXTO DA TABELA (CORPO)
 <celula>      *
 <celula>      *
 <celula>      *
-<celula>     ---
+	<!-- conflito entre o texto e a imagem, vou pela imagem '-' -->
+<celula>     --- 
 <celula>     ---
 <celula> ÚLTIMOS 3 ANOS
 <celula> TEMPO DE VIDA
