@@ -1,0 +1,16 @@
+Objetivo
+A proposta desse projeto é criar um site utilizando as tecnologias HTML e CSS. Dessa forma você poderá colocar em prática os seguintes conceitos:
+
+Inserir navegação entre páginas;
+Utilizar tags de tabelas;
+Utilizar pseudo-classes e pseudo-elementos;
+Utilizar Flexbox.
+
+=================================================================================================================================================
+
+Checklist
+Para garantir que seu passo 2 está completo, verifique os itens abaixo:
+
+Certifique-se de compreender as especificações do projeto com base no minimundo;
+Certifique-se de compreender todos os requisitos necessários para o desenvolvimento do projeto;
+Certifique-se de construir uma documentação com base nas especificações do projeto antes de iniciar a codificação.
