@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projeto | AlfaTech</title>
     <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav>
-      <div>
-        <div>
-          <img src="assets\imgs\logo-icone.png" alt="">
-          <div>
-            <h1>AlfaTech</h1>
-            <p>Soluções em hospedagem</p>
+      <div class="d-flex limit-1024 justify-content-between align-items-center">
+        <div class="logotipo d-flex align-items-center">
+          <img class="logo" src="assets\imgs\logo-icone.png" alt="">
+          <div class="limit-70">
+            <h1 class="m-0">AlfaTech</h1>
+            <p class="text-blue m-0 fw-600">Soluções em hospedagem</p>
           </div>
         </div>
-        <ul>
+        <ul class="d-flex">
           <li><a href="#info">INFORMAÇÕES</a></li>
           <li><a href="#planos">PLANOS</a></li>
           <li><a href="tabela-precos.html">PREÇOS</a></li>
@@ -25,10 +28,10 @@
       </div>
     </nav>
     <main>
-      <header>
-        <div>
+      <header class="banner bg-blue">
+        <div class="d-flex limit-1024 align-items-center p-md">
           <div>
-            <p>Simples - Fácil de usar - 10x mais rápido</p>
+            <p class="letter-spacing-sm">Simples - Fácil de usar - 10x mais rápido</p>
             <h2>O melhor serviço de hospedagem na web para o seu site.</h2>
             <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua hospedagem.</p>
           </div>
@@ -36,36 +39,33 @@
         </div>
       </header>
       <!-- call-to-action 1 -->
-      <div>
-        <div>
+      <div class="cta bg-dark p-sm">
+        <div class="d-flex align-items-center justify-content-between limit-1024">
           <div>
             <h2>Hospede o seu site por apenas R$29 por mês.</h2>
             <p>Também temos planos gratuitos. Adquira já o seu.</p>
           </div>
-          <div>
-            <div>
-              <img src="assets\imgs\icone-foguete.png" alt="">
-              <a href="tabela-precos.html">TABELA DE PREÇOS</a>
-            </div>
+          <div class="bg-blue p-sm fw-700 text-center">
+            <a href="tabela-precos.html">TABELA DE PREÇOS</a>
           </div>
         </div>
       </div>
       <!-- informações -->
       <section id="info">
-        <div>
-          <h2>Existem diversos serviços de hospedagem de sites. Porque você deve nos escolher?</h2>
-          <div>
-            <div>
+        <div class="limit-1024 p-sm py-md text-center">
+          <h2>Existem diversos serviços de hospedagem de sites. Porque você deve <span>nos escolher?</span></h2>
+          <div class="d-flex flex-row-md">
+            <div class="flex-column align-items-center p-sm">
               <img src="assets\imgs\icone-engrenagens.png" alt="">
               <h3>Fácil de configurar</h3>
               <p>Facilmente configurável em plataformas CMS populares - Wordpress, Joomia ...</p>
             </div>
-            <div>
+            <div class="flex-column align-items-center p-sm">
               <img src="assets\imgs\cloud-icone.png" alt="">
               <h3>Servidores 100% Online</h3>
               <p>Serviços que operam 100% do tempo para manter o seu site online...</p>
             </div>
-            <div>
+            <div class="flex-column align-items-center p-sm">
               <img src="assets\imgs\icone-suporte.png" alt="">
               <h3>Suporte 24/7</h3>
               <p>Suporte altamente treinado e especializado em soluções de Cloud...</p>
@@ -75,30 +75,34 @@
       </section>
       <!-- planos -->
       <section id="planos">
-        <div>
-          <h2>Pague somente pelo que for usar. Sem cobranças adicionais!</h2>
+        <div class="limit-1024 text-center p-sm py-md">
+          <h2 class="m-0">Pague <span>somente</span> pelo que for usar. Sem cobranças adicionais!</h2>
           <table>
             <thead>
               <tr>
-                <th><h3>PESSOAL</h3></th>
-                <th><h3>PROFISSIONAL</h3></th>
-                <th><h3>EMPRESARIAL</h3></th>
-                <th><h3>BIG TECHS</h3></th>
-              </tr>
-              <tr>
-                <th><img src="assets\imgs\pessoal-icone.png" alt=""></th>
-                <th><img src="assets\imgs\equipe-icone.png" alt=""></th>
-                <th><img src="assets\imgs\empresa-icone.png" alt=""></th>
-                <th><img src="assets\imgs\big-tech.png" alt=""></th>
-              </tr>
-              <tr>
-                <th><p>Indicado para uso pessoal</p></th>
-                <th><p>Indicado para profissionais de T.I.</p></th>
-                <th><p>Indicado para empresas</p></th>
-                <th><p>Indicado para grandes empresas</p></th>
+                <th>
+                  <h3>PESSOAL</h3>
+                  <img src="assets\imgs\pessoal-icone.png" alt="">
+                  <p>Indicado para uso pessoal</p>
+                </th>
+                <th>
+                  <h3>PROFISSIONAL</h3>
+                  <img src="assets\imgs\equipe-icone.png" alt="">
+                  <p>Indicado para profissionais de T.I.</p>
+                </th>
+                <th>
+                  <h3>EMPRESARIAL</h3>
+                  <img src="assets\imgs\empresa-icone.png" alt="">
+                  <p>Indicado para empresas</p>
+                </th>
+                <th>
+                  <h3>BIG TECHS</h3>
+                  <img src="assets\imgs\big-tech.png" alt="">
+                  <p>Indicado para grandes empresas</p>
+                </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="fw-500">
               <tr>
                 <td>1 usuário</td>
                 <td>10 usuários</td>
@@ -134,11 +138,12 @@
         </div>
       </section>
       <!-- call-to-action 2 -->
-      <div>
-        <div>
-          <h2>Mais de 20.000 pessoas confiam na Spark! Seja um deles você também!</h2>
-          <div>
-            <img src="assets\imgs\icone-foguete.png" alt="">
+      <div class="cta bg-blue p-sm">
+        <div class="d-flex align-items-center justify-content-between limit-1024">
+          <div class="limit-70">
+            <h2>Mais de 20.000 pessoas confiam na Spark! Seja um deles você também!</h2>
+          </div>
+          <div class="bg-dark p-sm fw-700 text-center">
             <a href="tabela-precos.html">TABELA DE PREÇOS</a>
           </div>
         </div>
@@ -146,25 +151,27 @@
       </section>
     </main>
     <footer>
-      <div id="contato">
-        <header>
-          <img src="assets\imgs\logo-icone.png" alt="">
+      <address id="contato">
+        <header class="d-flex justify-content-center pt-md">
+          <img class="logo" src="assets\imgs\logo-icone.png" alt="">
           <div>
-            <h2>AlfaTech</h2>
-            <p>Soluções em hospedagem</p>
+            <h2 class="fw-800 m-0">AlfaTech</h2>
+            <p class="text-blue m-0 fw-600">Soluções em hospedagem</p>
           </div>
         </header>
         <!-- contato -->
-        <div>
-          <p>Telefone & Whatsapp: (21) 99999-5555</p>
-          <p>E-mail: suporte@alfatech.com</p>
-          <p>Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</p>
-          <p>© AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
+        <div class="text-center fw-500">
+          <div class="pt-md">
+            <p>Telefone & Whatsapp: (21) 99999-5555</p>
+            <p>E-mail: suporte@alfatech.com</p>
+            <p>Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</p>
+            <p>© AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
+          </div>
+          <div class="pt-md">
+            <p>Desenvolvido por <span>Syan</span></p>
+          </div>
         </div>
-      </div>
-      <div>
-        <p>Desenvolvido por Syan</p>
-      </div>
+      </address>
     </footer>
   </body>
 </html>
