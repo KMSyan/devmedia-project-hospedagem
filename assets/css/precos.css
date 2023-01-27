@@ -44,6 +44,15 @@ th p {
   color: var(--neutra-4);
   font-weight: 400;
 }
+/*  */
+th:hover:not(:first-child),
+td:first-child:hover {
+  background-color: var(--primaria);
+  color: var(--light);
+}
+td:hover:not(:first-child) {
+  background-color: var(--shadow);
+}
 
 /* || media query */
 @media (max-width:900px) {
