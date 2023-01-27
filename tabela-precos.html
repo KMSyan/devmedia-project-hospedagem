@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projeto | Tabela de Preços - AlfaTech</title>
     <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\precos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <div>
-        <div>
+    <nav class="bg-blue">
+      <div class="d-flex limit-1024 justify-content-between align-items-center">
+        <div class="logotipo d-flex align-items-center">
           <img class="logo" src="assets\imgs\logo-icone-escuro.png" alt="">
-          <div>
-            <h1>AlfaTech</h1>
-            <p>Soluções em hospedagem</p>
+          <div class="limit-70">
+            <h1 class="m-0" style="color: initial;">AlfaTech</h1>
+            <p class="m-0 fw-600">Soluções em hospedagem</p>
           </div>
         </div>
-        <ul>
+        <ul class="d-flex">
           <li><a href="index.html">HOME</a></li>
           <li><a href="index.html#info">INFORMAÇÕES</a></li>
           <li><a href="index.html#planos">PLANOS</a></li>
@@ -28,7 +29,7 @@
       </div>
     </nav>
     <main>
-      <div>
+      <div class="limit-1024 py-md text-center d-flex justify-content-center">
         <table>
           <thead>
             <tr>
@@ -83,59 +84,59 @@
             </tr>
             <tr>
               <td>RELATÓRIO DE EMAILS</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
             </tr>
             <tr>
               <td>TRANSAÇÃO ILIMITADAS</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
             </tr>
             <tr>
               <td>RASTREADOR DE PAGAMENTO</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
             </tr>
             <tr>
               <td>EXPORTAÇÃO DE DADOS</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
             </tr>
             <tr>
               <td>CONVERSOR DE MOEDA</td>
-              <td>---</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
+              <td></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
             </tr>
             <tr>
               <td>ACESSO A API</td>
-              <td>---</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
+              <td></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
             </tr>
             <tr>
               <td>RESTRIÇÃO DE IP</td>
-              <td>---</td>
-              <td>---</td>
-              <td>*</td>
-              <td>*</td>
+              <td></td>
+              <td></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
             </tr>
             <tr>
               <td>FEED PERSONALIZADO</td>
-              <td>---</td>
-              <td>---</td>
-              <td>*</td>
-              <td>*</td>
+              <td></td>
+              <td></td>
+              <td><span class="dot"></span></td>
+              <td><span class="dot"></span></td>
             </tr>
             <tr>
               <td>LIMITE DE IMPORTAÇÃO DE DADOS</td>
@@ -163,19 +164,21 @@
       </div>
     </main>
     <footer>
-      <div>
-        <header>
-          <img class="logo" src="assets\imgs\logo-icone-escuro.png" alt="">
-          <div>
-            <h2>AlfaTech</h2>
-            <p>Soluções em hospedagem</p>
-          </div>
-        </header>
-        <p>© AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
-      </div>
-      <div>
-        <p>Desenvolvido por Syan</p>
-      </div>
+      <address class="text-center fw-500 ">
+        <div class="flex-column align-items-center bg-blue py-sm">
+          <header class="logotipo d-flex align-items-center justify-content-center">
+            <img class="logo" src="assets\imgs\logo-icone-escuro.png" alt="">
+            <div class="limit-70">
+              <h2 class="m-0">AlfaTech</h2>
+              <p class="m-0 fw-600">Soluções em hospedagem</p>
+            </div>
+          </header>
+          <p>© AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
+        </div>
+        <div>
+          <p>Desenvolvido por <span class="text-blue">Syan</span></p>
+        </div>
+      </address>
     </footer>
   </body>
 </html>

@@ -31,7 +31,6 @@ a {
   content: "";
   display: block;
   padding: 90px 0 0;
-  background-color: transparent;
 }
 
 /* ||| reutilizaveis */
@@ -55,23 +54,11 @@ section h2 {
   font-size: 2rem;
   font-weight: 800;
 }
-.fw-400 {
-  font-weight: 400;
-}
 .fw-500 {
   font-weight: 500;
 }
-.fw-600 {
-  font-weight: 600;
-}
 .fw-700 {
   font-weight: 700;
-}
-.fw-800 {
-  font-weight: 800;
-}
-.fw-900 {
-  font-weight: 900;
 }
 .text-center {
   text-align: center;
@@ -93,10 +80,6 @@ section h2 {
 }
 .p-sm {
   padding: 1rem;
-}
-.px-sm {
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 .py-sm {
   padding-top: 1rem;
@@ -123,9 +106,6 @@ section h2 {
 }
 .justify-content-center {
   justify-content: center;
-}
-.justify-content-around {
-  justify-content: space-around;
 }
 .justify-content-between {
   justify-content: space-between;
@@ -158,82 +138,12 @@ nav ul {
 nav li:not(:last-child) {
   margin-right: 1rem;
 }
-/* banner */
-.banner h2 {
-  font-size: 2rem;
-}
-.banner img {
-  max-width: 450px;
-}
-/* call-to-action */
-.cta div:nth-child(2) {
-  border-radius: 3px;
-  margin-left: 5%;
-  max-width: 212px;
-  min-width: 123px;
-}
-.cta a::before {
-  content: "";
-  display: inline-block;
-  background-image: url("../imgs/icone-foguete.png");
-  background-size: cover;
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-}
-/* info&planos*/
-#info img,
-#planos img {
-  max-width: 200px;
-}
-#info {
-  background-color: var(--neutra-2);
-}
-#planos {
-  background-color: var(--neutra-1);
-}
-table {
-  box-shadow: 0 0 50px var(--shadow);
-  margin: 3rem 0 2rem;
-  padding: 1rem;
-}
-thead {
-  background-color: var(--light);
-}
-thead p {
-  color:var(--neutra-3);
-  font-weight: 400;
-}
-tr {
-  display: flex;
-}
-th,
-td {
-  width: 25%;
-}
-th {
-  padding: 0 1rem;
-}
-td {
-  padding:.5rem 1rem;
-}
-tbody tr:nth-child(odd) {
-  background-color: var(--neutra-1);
-}
-tbody tr:nth-child(even) {
-  background-color: var(--light);
-}
 /* footer */
 address {
   font-style: normal;
 }
 
 /* media query */
-@media (max-width: 900px) {
-  .banner div {
-    flex-direction: column-reverse;
-  }
-}
 @media (max-width: 768px) {
   body {
     font-size: 14px;
