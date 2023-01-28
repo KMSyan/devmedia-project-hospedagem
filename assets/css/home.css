@@ -32,6 +32,17 @@
 #planos {
   background-color: var(--neutra-1);
 }
+.tabela-planos{
+  overflow-x: auto;
+  margin-bottom:10px;
+}
+.tabela-planos::-webkit-scrollbar {
+  height: 5px;
+}
+.tabela-planos::-webkit-scrollbar-thumb {
+  background: var(--secundaria);
+  border-radius: 2.5px;
+}
 table {
   box-shadow: 0 0 50px var(--shadow);
   margin: 3rem 0 2rem;
@@ -70,16 +81,25 @@ td:hover {
 }
 
 /* media query */
+@media (max-width: 465px) {
+  #planos .p-sm {
+    padding: 0;
+  }
+  #planos img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+    padding: 0;
+  }
+}
 @media (max-width: 900px) {
   .banner div {
     flex-direction: column-reverse;
   }
   .banner img {
     max-width: 400px;
-  }
-}
-@media (max-width: 768px) {
-  table {
-    padding: 0;
   }
 }

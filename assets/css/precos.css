@@ -32,6 +32,11 @@ td,
 th {
   padding: .8rem .5rem;
   width: 20%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 th p,
 h2 {
@@ -57,18 +62,11 @@ td:hover:not(:first-child) {
 /* || media query */
 @media (max-width:900px) {
   h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   th p,
   td {
-    font-size: .7rem;
-  }
-  td:first-child {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
+    font-size: .6rem;
   }
 }
 

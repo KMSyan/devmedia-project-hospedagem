@@ -146,7 +146,7 @@ address {
 /* media query */
 @media (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: .7rem;
   }
   nav {
     padding: 1rem 0 0;
