@@ -30,12 +30,12 @@ a {
 :target::before {
   content: "";
   display: block;
-  padding: 90px 0 0;
+  height: 90px;
+  margin-top: -90px;
 }
 
 /* ||| reutilizaveis */
 /* || cores */
-span,
 .text-blue {
   color: var(--primaria);
 }
@@ -49,7 +49,7 @@ span,
 }
 /* || texto e tipografia */
 h1,
-#contato h2,
+.logotipo h2,
 section h2 {
   font-size: 2rem;
   font-weight: 800;
@@ -84,9 +84,6 @@ section h2 {
 .py-sm {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.p-md {
-  padding: 3rem 1rem;
 }
 .pt-md {
   padding-top: 3rem;
@@ -145,8 +142,21 @@ address {
 
 /* media query */
 @media (max-width: 768px) {
-  body {
+  :target::before {
+    height: 110px;
+    margin-top: -110px;
+  }
+  p {
+    font-size: .9rem;
+  }
+  table {
     font-size: .7rem;
+  }
+  .py-md {
+    padding: 1.5rem 1rem;
+  }
+  .pt-md {
+    padding-top: 1.5rem;
   }
   nav {
     padding: 1rem 0 0;

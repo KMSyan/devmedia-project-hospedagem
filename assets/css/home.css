@@ -1,4 +1,7 @@
 /* banner */
+.banner {
+  padding: 3rem 1rem;
+}
 .banner h2 {
   font-size: 2rem;
 }
@@ -6,6 +9,10 @@
   max-width: 450px;
 }
 /* call-to-action */
+.cta {
+  position: relative;
+  z-index: 0;
+}
 .cta div:nth-child(2) {
   border-radius: 3px;
   margin-left: 5%;
@@ -29,7 +36,7 @@
 #info {
   background-color: var(--neutra-2);
 }
-#planos {
+#planos div {
   background-color: var(--neutra-1);
 }
 .tabela-planos{
@@ -44,9 +51,8 @@
   border-radius: 2.5px;
 }
 table {
-  box-shadow: 0 0 50px var(--shadow);
-  margin: 3rem 0 2rem;
-  padding: 1rem;
+  box-shadow: 0 0 20px var(--shadow);
+  margin: 3rem 1rem 2rem;
 }
 thead {
   background-color: var(--light);
@@ -61,6 +67,10 @@ tr {
 th,
 td {
   width: 25%;
+}
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: 1px solid silver;
 }
 th {
   padding: 0 1rem;
@@ -83,7 +93,8 @@ td:hover {
 /* media query */
 @media (max-width: 465px) {
   #planos .p-sm {
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
   #planos img {
     width: 150px;
@@ -91,8 +102,11 @@ td:hover {
 }
 
 @media (max-width: 768px) {
+  .banner {
+    padding: .5rem 1rem 1.5rem;
+  }
   table {
-    padding: 0;
+    margin: .2rem;
   }
 }
 @media (max-width: 900px) {
