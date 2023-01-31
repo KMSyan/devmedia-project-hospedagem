@@ -96,11 +96,21 @@ td:hover {
     padding-right: 0;
     padding-left: 0;
   }
+  #planos h2 {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
   #planos img {
     width: 150px;
   }
+  .cta div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta div:nth-child(2) {
+    margin-left: 0;
+  }
 }
-
 @media (max-width: 768px) {
   .banner {
     padding: .5rem 1rem 1.5rem;

@@ -138,10 +138,17 @@ nav li:not(:last-child) {
 /* footer */
 address {
   font-style: normal;
+  padding-right: .5rem;
+  padding-left: .5rem;
 }
 
 /* media query */
 @media (max-width: 768px) {
+  h1,
+.logotipo h2,
+section h2 {
+  font-size: 1.5rem;
+}
   :target::before {
     height: 110px;
     margin-top: -110px;
@@ -164,6 +171,13 @@ address {
   nav > div {
     flex-direction: column;
   }
+  nav ul {
+    margin: .5rem 0 .2rem;
+    padding: .2rem!important;
+  }
+  nav li:not(:last-child) {
+    margin-right: .5rem;
+  }
   nav .logo {
     max-width: 70px;
   }
@@ -185,5 +199,10 @@ address {
   /*  */
   .flex-row-md {
     flex-direction: column;
+  }
+}
+@media (max-width: 465px) {
+  nav li {
+    font-size:.6rem;
   }
 }
